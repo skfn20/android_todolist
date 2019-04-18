@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="150dp"
+    android:layout_width="150dp">
+    <item
+        android:id="@+id/task"
+        android:title="Task"></item>
+    <item
+        android:id="@+id/doing"
+        android:title="Doing"></item>
+    <item
+        android:id="@+id/done"
+        android:title="Done"></item>
+</menu>

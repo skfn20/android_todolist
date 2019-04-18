@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Task">
+    <LinearLayout
+        android:id="@+id/task_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/task"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="TASK"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:background="@drawable/border"
+            android:clickable="true"
+            android:focusable="true"/>
+        <ListView
+            android:id="@+id/list_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fastScrollEnabled="true"
+            android:scrollbars="none"
+            ></ListView>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/add_task"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="+ Add another card"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</android.support.constraint.ConstraintLayout>

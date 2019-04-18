@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Done">
+    <LinearLayout
+        android:id="@+id/done_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/add_done"
+        >
+        <TextView
+            android:id="@+id/done"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="DONE"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:background="@drawable/border"/>
+        <ListView
+            android:id="@+id/list_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fastScrollEnabled="true"
+            android:scrollbars="none"
+            ></ListView>
+    </LinearLayout>
+    <Button
+        android:id="@+id/add_done"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="+ Add another card"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</android.support.constraint.ConstraintLayout>

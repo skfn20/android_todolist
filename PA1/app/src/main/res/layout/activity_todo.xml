@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TodoActivity">
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/TASK"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:drawable/list_selector_background"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Task"
+            android:textFontWeight="bold"
+            android:textSize = "30dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toTopOf="@+id/linear" />
+        <TextView
+            android:id="@+id/DOING"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:drawable/list_selector_background"
+            android:text="Doing"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textFontWeight="bold"
+            android:textSize = "30dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toTopOf="@+id/TASK"
+            />
+        <TextView
+            android:id="@+id/DONE"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Done"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textFontWeight="bold"
+            android:textSize = "30dp"
+            android:gravity="center"
+            android:background="@android:drawable/list_selector_background"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toTopOf="@+id/DOING"
+            />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
